@@ -1,0 +1,70 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+box-sizing: border-box;
+}
+
+.btn1{
+    padding: 8px 10px;
+    border-radius: 5px;
+    display: block;
+    width: 200px;
+    margin: 10px auto 0px auto;
+    background-color: #256D85;
+    color: white;
+    
+}
+
+.btn1:hover {
+    background-color: #2B4865;
+  }
+  
+
+.row{
+margin: 160px auto;
+width: 60%;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+float: left;
+width: 50%;
+padding: 10px;
+height: 350px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.pensioner-details{
+    padding: 12px 15px;
+    margin: 0px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: #34808f;
+    box-decoration-break: clone;
+    font-style: italic;
+}
+
+.pension-amount{
+    padding: 12px 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 120px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.alert p{
+  text-align: center;
+}

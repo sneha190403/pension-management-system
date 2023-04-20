@@ -1,0 +1,22 @@
+.main{
+    background-color: #E7F6F2;
+    height: 646px;
+}
+
+/* Navbar CSS */
+
+.navbar-custom{
+    background-color: #34808f;
+}
+
+.navbar-custom .navbar-brand{
+    color: white;
+}
+
+.nav > li > a:hover{
+    background-color: #1c434b;
+}
+
+a{
+    color:white;
+}

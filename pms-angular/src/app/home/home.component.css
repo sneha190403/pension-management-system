@@ -1,0 +1,21 @@
+.heading{
+    text-align: center;
+    margin: 100px 0 25px 0;
+    font-style: italic;
+    font-weight: 20px;
+}
+.login{
+   margin: 55px auto;
+   text-align: center;
+}
+a{
+    color: white;
+    border: black;
+    background-color: #34808f;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: #1c434b;
+}

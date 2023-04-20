@@ -1,0 +1,19 @@
+    <div>
+
+        <!--Login Form-->
+        <div class="outer-form">
+            <div class="login-heading">
+            <h2>User Login</h2>
+            </div>
+            <div class="container" id="form">
+                <label><b>Username</b></label>
+                <input type="text" [(ngModel)]="username" placeholder="Enter Username" required>
+
+                <label><b>Password</b></label>
+                <input type="password" [(ngModel)]="password" placeholder="Enter Password" required>
+                    
+                <button (click)="authenticate()">Login</button>
+            </div>
+        
+        </div>
+</div>

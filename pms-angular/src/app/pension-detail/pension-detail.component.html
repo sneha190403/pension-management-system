@@ -1,0 +1,36 @@
+<div>
+
+    <!--Pension Detail-->
+    <div class="outer">
+        <div class="row">
+        <div class="column" style="background-color:#A5C9CA;">
+            <div class="enterAadhaar">
+                <input type="text"  [(ngModel)]="aadhaarNumber" class="form-control" placeholder="Enter Your Aadhaar Here">
+                <button class="btn btn1" (click)="showPensionerDetails()">Get Pensioner Details</button>
+                <br>
+            </div>
+            <div *ngIf="showPensioner" class="pensioner-details">
+                <label>Aadhaar Number:</label> {{ aadhaarNumber2 }} <br>
+                <label>Name: </label> {{ pname }} <br>
+                <label>DOB: </label> {{ dob }} <br>
+                <label>PAN Number: </label> {{ pan_number }} <br>
+                <label>Bank Name: </label> {{ bank_detail.bank_name }} <br>
+                <label>Account Number: </label> {{ bank_detail.account_number }} <br>
+        
+                <button class="btn btn1" (click)="showPensionDetail()">Get Pension Detail</button>
+            </div>
+            <div *ngIf="showAlert" class="alert-danger alert">
+                <p>Invalid Aadhaar Detail ! No record found </p>
+            </div>
+        </div>
+        <div class="column" style="background-color:#E7F6F2;">
+            <div class="pension-amount">
+                <div *ngIf="showPension">
+                    <label>Pension Amount: </label> {{ pensionAmount }} <br>
+                    <label>Bank Service Charge: </label> {{ bankServiceCharge }} <br>
+                </div>        
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
